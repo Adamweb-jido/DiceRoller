@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         binding.myText.setText("Welcome")
+        binding.myText.textSize.dec()
 
     }
 }
