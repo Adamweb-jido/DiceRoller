@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
                 else -> R.drawable.dice_six_faces_six
             }
             binding.myImg.setImageResource(diceImages)
+            binding.myText.text = "NO. Of Face(s): $diceRoll"
         }
 
     }

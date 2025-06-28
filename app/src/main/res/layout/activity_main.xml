@@ -13,12 +13,14 @@
 
     <TextView
         android:id="@+id/myText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
         android:text="Dice Roller"
-        android:textSize="30sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
         android:textAlignment="center"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif-black"
         android:textColor="#880632"
         android:background="#5205262B"/>
 
