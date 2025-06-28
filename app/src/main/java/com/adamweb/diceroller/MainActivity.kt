@@ -1,12 +1,13 @@
 package com.adamweb.diceroller
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.adamweb.diceroller.databinding.ActivityMainBinding
+import kotlin.random.Random
+import kotlin.random.nextInt
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,8 +22,18 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.myText.setText("Welcome")
-        binding.myText.textSize.dec()
+        binding.myBtn.setOnClickListener {
+            val diceRoll = Random.nextInt(1..6)
+            val diceImages = when (diceRoll){
+                1 -> R.drawable.dice_six_faces_one
+                2 -> R.drawable.dice_six_faces_two
+                3 -> R.drawable.dice_six_faces_three
+                4 -> R.drawable.dice_six_faces_four
+                5 -> R.drawable.dice_six_faces_five
+                else -> R.drawable.dice_six_faces_six
+            }
+            binding.myImg.setImageResource(diceImages)
+        }
 
     }
 }
