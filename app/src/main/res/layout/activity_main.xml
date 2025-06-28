@@ -4,16 +4,44 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#E8CACA"
+    android:layout_margin="10dp"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/myText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Hello World!"
-        android:layout_gravity="center"
+        android:text="Dice Roller"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:textColor="#880632"
+        android:background="#5205262B"/>
 
+    <ImageView
+        android:id="@+id/myImg"
+        android:contentDescription="dice"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:src="@drawable/dice_six_faces_one"
         />
+
+    <Button
+        android:id="@+id/myBtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Roll"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"
+        android:backgroundTint="#870909"/>
+
+
 
 </LinearLayout>
