@@ -7,7 +7,7 @@
     android:padding="15dp"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#E8CACA"
+    android:background="#060000"
     android:layout_margin="10dp"
     tools:context=".MainActivity">
 
@@ -21,7 +21,7 @@
         android:gravity="center"
         android:textAlignment="center"
         android:fontFamily="sans-serif-black"
-        android:textColor="#880632"
+        android:textColor="#CDB2BB"
         android:background="#5205262B"/>
 
     <ImageView
@@ -37,10 +37,12 @@
 
     <Button
         android:id="@+id/myBtn"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
         android:text="Roll"
         android:textSize="30sp"
+        android:textColor="#1E1E1E"
+        android:backgroundTint="#C78A8A"
         android:fontFamily="sans-serif-black"
         />
 
